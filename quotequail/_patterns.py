@@ -25,6 +25,8 @@ FORWARD_MESSAGES = [
 
     # Thunderbird forward
     u'Message transféré',
+
+    'Forwarded by .*',
 ]
 
 # We yield this pattern to simulate Outlook forward styles. It is also used for
@@ -94,7 +96,7 @@ MULTIPLE_WHITESPACE_RE = re.compile('\s+')
 
 # Amount to lines to join to check for potential wrapped patterns in plain text
 # messages.
-MAX_WRAP_LINES = 2
+MAX_WRAP_LINES = 10
 
 # minimum number of headers that we recognize
 MIN_HEADER_LINES = 2
