@@ -44,7 +44,7 @@ FORWARD_STYLES = [
     'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in',
 ]
 
-HEADER_RE = re.compile(r'\*?([-\w ]+):\*?(.*)$', re.UNICODE)
+HEADER_RE = re.compile(r'\*?([-\w ]+):\*?(.*)', re.UNICODE)
 
 HEADER_MAP = {
     'from': 'from',
