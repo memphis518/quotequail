@@ -8,6 +8,7 @@ REPLY_PATTERNS = [
     u'^Le (.*) a écrit :$', # French
     u'El (.*) escribió:$', # Spanish
     u'([0-9]{4}/[0-9]{1,2}/[0-9]{1,2}) (.* <.*@.*>)$', # gmail (?) reply
+    u'^(.*)---([0-9]{1,2}/[0-9]{1,2}/[0-9]{4} [0-9]{1,2}:[0-9]{2}:[0-9]{2} AM|PM)---.*$'
 ]
 
 REPLY_DATE_SPLIT_REGEX = re.compile(r'^(.*(:[0-9]{2}( [apAP]\.?[mM]\.?)?)), (.*)?$')
@@ -27,8 +28,6 @@ FORWARD_MESSAGES = [
     u'Message transféré',
 
     'Forwarded by .*',
-
-    'Origin\n'
 ]
 
 # We yield this pattern to simulate Outlook forward styles. It is also used for
