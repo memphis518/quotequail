@@ -27,6 +27,8 @@ FORWARD_MESSAGES = [
     u'Message transféré',
 
     'Forwarded by .*',
+
+    'Origin\n'
 ]
 
 # We yield this pattern to simulate Outlook forward styles. It is also used for
